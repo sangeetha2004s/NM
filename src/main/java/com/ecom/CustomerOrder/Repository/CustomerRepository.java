@@ -1,4 +1,7 @@
 package com.ecom.CustomerOrder.Repository;
 
-public class CustomerRepository {
-}
+
+import com.ecom.CustomerOrder.Model.Customer;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CustomerRepository extends JpaRepository<Customer, Long> { }
